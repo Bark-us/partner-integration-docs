@@ -9,7 +9,7 @@ integration your existing product with Bark? You've come to the right place!
 Making a request
 ----------------
 
-All URLs start with `https://www.bark.us/api/v1/parnters`. **HTTPS only**.
+All URLs start with `https://www.bark.us/api/v1/partners`. **HTTPS only**.
 If we change the API in backward-incompatible ways, we'll bump the version
 marker and maintain stable support for the old URLs.
 
@@ -88,11 +88,13 @@ function generate_signature($endpoint, $params, $secret) {
   }
   return hash_hmac('sha256', $sig, $secret, false);
 }
+?>
 ```
 
 ### Request Example
 
 Partner Token: `XdJihWNXYbaLzK4n`
+
 Partner Secret: `M6Atnz1rEAARBJ8G`
 
 Endpoint: `/signup`

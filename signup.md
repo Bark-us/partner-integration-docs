@@ -18,7 +18,7 @@ Signup
 * `token` - partner integration token we supply you
 * `signature` - HMAC signature of request parameters
 
-###### Response
+##### Response
 
 This endpoint will return redirect the user to the
 appropriate page inside Bark upon signup.
@@ -37,7 +37,7 @@ Signup Signature Check
 * `token` - partner integration token we supply you
 * `signature` - HMAC signature of request parameters
 
-###### Response
+##### Response
 
 This endpoint will return `200 Success` with the text `Signature is valid` if
 signature matches.
