@@ -16,7 +16,8 @@ Signup
 * `pk` - the primary key of the user in your data store
 * `email` - email address of the user
 * `token` - partner integration token we supply you
-* `signature` - HMAC signature of request parameters
+* `signature` - HMAC signature of request parameters (endpoint for signature
+    generation is `/signup`)
 
 ##### Response
 
@@ -35,7 +36,8 @@ Signup Signature Check
 * `pk` - the primary key of the user in your data store
 * `email` - email address of the user
 * `token` - partner integration token we supply you
-* `signature` - HMAC signature of request parameters
+* `signature` - HMAC signature of request parameters (endpoint for signature
+    generation is `/signup/check`)
 
 ##### Response
 
