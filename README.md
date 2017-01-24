@@ -6,6 +6,26 @@ The Bark.us Partner Integration
 Welcome to the Bark.us Partner Integration documentation. Looking to
 integration your existing product with Bark? You've come to the right place!
 
+How does it work?
+-----------------
+
+Within a product/service that wants to offer Bark's services to their customers, this
+integration offers the partner to setup single button/links allowing the user
+of their product/service the ability to sign up for Bark with their current
+email. While there is some additional configuration in Bark for a parent and
+their children (e.g. connection social media accounts, emails, etc.), going
+through this integration will make signup 1-click, and also allow us to
+associate the signup to your company.
+
+For example, during registration within your product/service, you might offer a
+checkbox or link offering Bark registration and the benefits.
+
+The signup API endpoints below are configured such that they can also be used
+within the site if the user has already registered. If that's the case, the
+user will be authenticated as their existing account and redirected to their
+Bark dashboard, allowing you to use it the same link within your
+product/service's dashboard or profile.
+
 Making a request
 ----------------
 
