@@ -22,8 +22,8 @@ The request body should be JSON-serialized with the following format:
 ```json
 {
     "children": [
-      { "email": "billy@example.com", domain: "example.com" },
-      { "email": "johnny@example.com", domain: "example.com" }
+      { "email": "billy@example.com", "domain": "example.com" },
+      { "email": "johnny@example.com", "domain": "example.com" }
     ]
 }
 ```
@@ -78,8 +78,8 @@ The request body should be JSON-serialized with the following format:
 ```json
 {
     "children": [
-      { "email": "billy@example.com", domain: "example.com" },
-      { "email": "johnny@example.com", domain: "example.com" }
+      { "email": "billy@example.com", "domain": "example.com" },
+      { "email": "johnny@example.com", "domain": "example.com" }
     ]
 }
 ```
