@@ -20,8 +20,9 @@ associate the signup to your company.
 For example, during registration within your product/service, you might offer a
 checkbox or link offering Bark registration and the benefits.
 
-The signup API endpoints below are configured such that they can also be used
-within the site if the user has already registered. If that's the case, the
+The [Signup API](https://github.com/Bark-us/partner-integration-docs/blob/master/signup.md)
+are configured such that they can also be used
+even if the user is already registered on Bark. If that's the case, the
 user will be authenticated as their existing account and redirected to their
 Bark dashboard, allowing you to use it the same link within your
 product/service's dashboard or profile.
@@ -36,7 +37,18 @@ marker and maintain stable support for the old URLs.
 Authentication
 --------------
 
-As part of your integration, you'll be given a `token` and `secret`. The token
+There are two ways to authenticate -- each endpoint will designate which means
+of authentication is required.
+
+The first requires an access token (we'll refer to this as "token
+authentication") for which you can supply in 2 ways when
+communicating with the API:
+
+1. Provide the `X-Token-Auth` header with the value being your integration token
+2. Include the query string param `token` (ie. `https://partner.bark.us/api/v1/partners/children?token=mysecrettoken`)
+
+The second involves both a `token` and `secret` to produce a signed request --
+we'll refer to this as "request signing authentication".  The token
 will be included as a query string parameter, while the `secret` will be used
 to sign the request.
 
@@ -139,6 +151,7 @@ The email address should **NOT** be encoded when generating the signature._
 API endpoints
 -------------
 - [Signup](https://github.com/Bark-us/partner-integration-docs/blob/master/signup.md)
+- [Children](https://github.com/Bark-us/partner-integration-docs/blob/master/children.md)
 
 Support
 -------
