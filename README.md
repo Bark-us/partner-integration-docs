@@ -10,12 +10,8 @@ How does it work?
 -----------------
 
 Within a product/service that wants to offer Bark's services to their customers, this
-integration offers the partner to setup single button/links allowing the user
-of their product/service the ability to sign up for Bark with their current
-email. While there is some additional configuration in Bark for a parent and
-their children (e.g. connection social media accounts, emails, etc.), going
-through this integration will make signup 1-click, and also allow us to
-associate the signup to your company.
+integration offers the partner the ability to set up single buttons/links to allow their users
+the ability to sign up for Bark with 1 click, and associates the signup to their company. After clicking this link in the partner's site/app, the user can then configure Bark-specific details (e.g. connecting social media accounts, text messaging, emails, etc.).
 
 For example, during registration within your product/service, you might offer a
 checkbox or link offering Bark registration and the benefits.
