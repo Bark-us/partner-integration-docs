@@ -37,13 +37,13 @@ The following attributes are children of the `activity` has key:
       "posted_at":      1488320403,
       "message_id":     "8a5da52ed126447d359e70c05721a8aa",
       "message":        "Hey",
-      "author_name":    "Bob"
-      "author_id":      "1234"
-      "recipient_name": "Jane"
-      "recipient_id":   "5678"
+      "author_name":    "Bob",
+      "author_id":      "1234",
+      "recipient_name": "Jane",
+      "recipient_id":   "5678",
       "sent":           true,
-      "provider":       "acme"
-      "type":           "chat"
+      "provider":       "acme",
+      "type":           "chat",
       "media_url":      "http://example.com/image.png"
     }
 }
