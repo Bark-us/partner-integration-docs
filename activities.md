@@ -62,6 +62,13 @@ along with a JSON response with `error` key with a value describing the error:
   "error": "Please provide valid connection_id param"
 }
 ```
+or
+
+```json
+{
+  "error": "Duplicate message_id"
+}
+```
 
 If there's a problem with the authorization token, a `401 Unauthorized` will be returned
 with the text `HTTP Token: Access denied.`
