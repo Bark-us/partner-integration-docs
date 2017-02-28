@@ -11,6 +11,8 @@ Signup
 
 * `GET /signup` will create the requested user in Bark
 
+This endpoint requires [request signing authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
+
 **Required parameters**:
 
 * `pk` - the primary key of the user in your data store

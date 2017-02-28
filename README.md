@@ -33,17 +33,23 @@ marker and maintain stable support for the old URLs.
 Authentication
 --------------
 
-There are two ways to authenticate -- each endpoint will designate which means
-of authentication is required.
+Each endpoint will designate which means of authentication is required.
 
 The first requires an access token (we'll refer to this as "token
-authentication") for which you can supply in 2 ways when
+header authentication") for which you supply in the `Authorization` header:
+
+If you're token is `1234567890`, you'd add the following header:
+
+`Authorization: Token token=1234567890`
+
+The second requires an access token (we'll refer to this as "token
+param authentication") for which you can supply in 2 ways when
 communicating with the API:
 
 1. Provide the `X-Token-Auth` header with the value being your integration token
 2. Include the query string param `token` (ie. `https://partner.bark.us/api/v1/partners/children?token=mysecrettoken`)
 
-The second involves both a `token` and `secret` to produce a signed request --
+The third involves both a `token` and `secret` to produce a signed request --
 we'll refer to this as "request signing authentication".  The token
 will be included as a query string parameter, while the `secret` will be used
 to sign the request.
@@ -148,6 +154,7 @@ API endpoints
 -------------
 - [Signup](https://github.com/Bark-us/partner-integration-docs/blob/master/signup.md)
 - [Children](https://github.com/Bark-us/partner-integration-docs/blob/master/children.md)
+- [Activities](https://github.com/Bark-us/partner-integration-docs/blob/master/activities.md)
 
 Support
 -------

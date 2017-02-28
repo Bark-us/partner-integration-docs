@@ -11,7 +11,7 @@ Create Children
 
 * `POST /children` will create the requested children in Bark
 
-This endpoint requires [token authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
+This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
 
 **Required parameters**:
 
