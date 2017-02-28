@@ -26,7 +26,7 @@ product/service's dashboard or profile.
 Making a request
 ----------------
 
-All URLs start with `https://www.bark.us/api/v1/partners`. **HTTPS only**.
+All URLs start with `https://www.bark.us/api/v1/`. **HTTPS only**.
 If we change the API in backward-incompatible ways, we'll bump the version
 marker and maintain stable support for the old URLs.
 

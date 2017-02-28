@@ -9,7 +9,7 @@ Endpoints:
 Create Children
 ------
 
-* `POST /children` will create the requested children in Bark
+* `POST /partners/children` will create the requested children in Bark
 
 This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
 
@@ -65,7 +65,7 @@ If there is an error, an error with the following format will be returned:
 Delete Children
 ----------------------
 
-* `DELETE /children` will delete the specified children in Bark
+* `DELETE /partners/children` will delete the specified children in Bark
 
 This endpoint requires [token authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
 

@@ -9,7 +9,7 @@ Endpoints:
 Signup
 ------
 
-* `GET /signup` will create the requested user in Bark
+* `GET /partners/signup` will create the requested user in Bark
 
 This endpoint requires [request signing authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
 
@@ -29,7 +29,7 @@ appropriate page inside Bark upon signup.
 Signup Signature Check
 ----------------------
 
-* `GET /signup/check` will check supplied signature for accuracy. During
+* `GET /partners/signup/check` will check supplied signature for accuracy. During
     development, it's worth using this endpoint to ensure you're appropriately
     generating signatures.
 
