@@ -75,7 +75,7 @@ response will be scoped to that child:
     "reviewed": 89,
     "unreviewed": 43
   },
-  "issues_review_url": "https://www.bark.us/snippets?t=1235"
+  "issues_review_url": "https://www.bark.us/snippets?t=1235",
   "abuse_types": [
     {
       "name": "Cyberbullying",
