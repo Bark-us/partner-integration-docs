@@ -155,6 +155,7 @@ API endpoints
 - [Signup](https://github.com/Bark-us/partner-integration-docs/blob/master/signup.md)
 - [Children](https://github.com/Bark-us/partner-integration-docs/blob/master/children.md)
 - [Activities](https://github.com/Bark-us/partner-integration-docs/blob/master/activities.md)
+- [Analytics](https://github.com/Bark-us/partner-integration-docs/blob/master/analytics.md)
 
 Support
 -------
