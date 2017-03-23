@@ -23,26 +23,46 @@ This endpoint requires [token param authentication](https://github.com/Bark-us/p
 
 ##### Response
 
-If successfully created, the following JSON-serialized response will be
+If no `email` parameter is provided, the following JSON-serialized response will be
 returned with a status of `200 Ok`:
 
 ```json
 {
   "success": true,
-  "children": [
-    {
-      "email": "jim@example.com",
-      "total": 104
-    },
-    {
-      "email": "sally@example.com",
-      "total": 84
-    },
-    {
-      "email": "bobby@example.com",
-      "total": 17
-    }
-  ],
+  "children": {
+    "unreviewed": [
+      {
+        "email": "jim@example.com",
+        "total": 27
+      },
+      {
+        "email": "sally@example.com",
+        "total": 20
+      },
+      {
+        "email": "bobby@example.com",
+        "total": 7
+      },
+      {
+        "email": "joe@example.com",
+        "total": 2
+      }
+    ],
+    "total": [
+      {
+        "email": "jim@example.com",
+        "total": 104
+      },
+      {
+        "email": "sally@example.com",
+        "total": 84
+      },
+      {
+        "email": "bobby@example.com",
+        "total": 17
+      }
+    ],
+  },
   "abuse_types": [
     {
       "name": "Cyberbullying",
@@ -63,6 +83,8 @@ returned with a status of `200 Ok`:
   ]
 }
 ```
+
+_Note: Each category will return the top 10 of each type_
 
 When an `email` is optionally provided as a query parameter, the analytics
 response will be scoped to that child:
