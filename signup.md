@@ -18,6 +18,15 @@ This endpoint requires [token param authentication](https://github.com/Bark-us/p
 * `email` - email address of the user
 * `token` - partner integration token we supply you
 
+**Optional parameters**:
+
+* `child_birthday` - date of birthday as a string with format YYYY-MM-DD
+* `child_name` - child's first name
+
+If optional parameters are supplied, a child will automatically be added to the
+account and the user will be immediately prompted to add connections for that
+child.
+
 ##### Response
 
 This endpoint will return redirect the user to the
