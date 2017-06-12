@@ -10,7 +10,7 @@ Create an Activity
 
 * `POST /activities` will create an activity in a child's connection in Bark
 
-This endpoint requires [token header authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
+This endpoint requires [token header authentication](https://github.com/Bark-us/partner-integration-docs#token-header-authentication).
 
 **Required parameters**:
 * `activity` - the primary hash include to the activity's attributes

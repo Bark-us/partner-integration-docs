@@ -11,7 +11,7 @@ Signup
 
 * `GET /partners/signup` will create the requested user in Bark
 
-This endpoint requires [request signing authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
+This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
 
 **Required parameters**:
 

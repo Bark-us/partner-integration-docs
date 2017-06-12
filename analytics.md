@@ -10,7 +10,7 @@ Get Analytics
 
 * `GET /partners/analytics` will return analytics for a domain
 
-This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#authentication).
+This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
 
 **Required parameters**:
 
