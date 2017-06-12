@@ -18,6 +18,10 @@ This endpoint requires [token param authentication](https://github.com/Bark-us/p
 * `email` - email address of the user
 * `token` - partner integration token we supply you
 
+Note: The `pk` is important to determine if the parent's account has already
+been created and whether they have an existing parent account on Bark prior to
+the referral.
+
 **Optional parameters**:
 
 * `child_birthday` - date of birthday as a string with format YYYY-MM-DD
