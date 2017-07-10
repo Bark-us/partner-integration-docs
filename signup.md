@@ -15,7 +15,8 @@ This endpoint requires [token param authentication](https://github.com/Bark-us/p
 **Required parameters**:
 
 * `pk` - the primary key of the user in your data store
-* `email` - email address of the user
+* `email` - email address of the user (be sure to URL encode special
+    characters)
 * `token` - partner integration token we supply you
 
 Note: The `pk` is important to determine if the parent's account has already
@@ -33,8 +34,10 @@ child.
 
 ##### Response
 
-This endpoint will return redirect the user to the
-appropriate page inside Bark upon signup.
+This endpoint will redirect the user to the
+appropriate page inside Bark upon signup. No need to query this endpoint prior
+to presenting to your users, it will do the right thing if embedded directly in
+your UI.
 
 `email` param should be properly URL encoded to retain any special characters
 not safely sent through a URL.
