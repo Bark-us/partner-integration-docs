@@ -27,6 +27,7 @@ the referral.
 
 * `child_birthday` - date of birthday as a string with format YYYY-MM-DD
 * `child_name` - child's first name
+* `child_email` - child's email
 
 If optional parameters are supplied, a child will automatically be added to the
 account and the user will be immediately prompted to add connections for that
@@ -39,7 +40,7 @@ appropriate page inside Bark upon signup. No need to query this endpoint prior
 to presenting to your users, it will do the right thing if embedded directly in
 your UI.
 
-`email` param should be properly URL encoded to retain any special characters
+`email` and `child_email` param should be properly URL encoded to retain any special characters
 not safely sent through a URL.
 
 Note: This endpoint can safely be used multiple times for a parent. If the
