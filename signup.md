@@ -45,8 +45,7 @@ not safely sent through a URL.
 
 Note: This endpoint can safely be used multiple times for a parent. If the
 parent has already signed up, it will not create another, but rather forward
-them safely in to the site while authenticating them as their original Bark
-account.
+them safely to the site where they can log in.
 
 If there is an error, an error with the following format will be returned:
 
