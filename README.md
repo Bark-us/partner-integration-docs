@@ -35,15 +35,6 @@ Authentication
 
 Each endpoint will designate which means of authentication is required.
 
-### Token Header Authentication
-
-The first requires an access token (we'll refer to this as "token
-header authentication") for which you supply in the `Authorization` header:
-
-If you're token is `1234567890`, you'd add the following header:
-
-`Authorization: Token token=1234567890`
-
 ### Token Param Authentication
 
 The second requires an access token (we'll refer to this as "token
@@ -56,6 +47,7 @@ communicating with the API:
 API endpoints
 -------------
 - [Signup](https://github.com/Bark-us/partner-integration-docs/blob/master/signup.md)
+- [Subscriptions](https://github.com/Bark-us/partner-integration-docs/blob/master/subscriptions.md)
 
 Support
 -------

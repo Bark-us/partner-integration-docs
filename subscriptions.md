@@ -11,7 +11,7 @@ Cancel Subscription
 
 * `DELETE /partners/subscriptions` will delete the specified children in Bark
 
-This endpoint requires [token header authentication](https://github.com/Bark-us/partner-integration-docs#token-header-authentication).
+This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
 
 **Required parameters**:
 
@@ -52,6 +52,16 @@ If there is an error, an error with the following format will be returned:
 ```
 
 `400 Bad Request`
+
+```json
+{
+  "success":    false,
+  "error":      "Please provide a valid pk",
+  "error_type": "invalid_params",
+}
+```
+
+`404 Not Found`
 
 ```json
 {
