@@ -60,7 +60,7 @@ If there is an error, an error with the following format will be returned:
 ```json
 {
   "success":    false,
-  "error":      "Please provide a valid pk",
+  "error":      "Partner pk has already been invited",
   "error_type": "invalid_params",
 }
 ```
@@ -68,7 +68,7 @@ If there is an error, an error with the following format will be returned:
 ```json
 {
   "success":    false,
-  "error":      "Please provide a valid email",
+  "error":      "Email is blank",
   "error_type": "invalid_params",
 }
 ```
