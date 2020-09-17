@@ -79,20 +79,20 @@ If there is an error, an error with the following format will be returned:
 Update Subscription
 ----------------------
 
-* `PUT /partners/subscriptions` will update the specified account in Bark
+* `PUT /partners/subscriptions/[pk]` will update the specified account in Bark
+
+Note: The `pk` will be the one used to create the account.
 
 This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
 
 **Required parameters**:
 
-* `pk` - the primary key of the user in your data store
 * `plan` - the subscription plan for the account customer (`bark` or `bark_junior`)
 
 The request body should be JSON-serialized with the following format:
 
 ```json
 {
-  "pk":   "MS2365",
   "plan": "bark_junior"
 },
 ```
