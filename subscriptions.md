@@ -4,6 +4,7 @@ Subscription
 Endpoints:
 
 - [Create subscription](#create-subscription)
+- [Update subscription](#update-subscription)
 - [Cancel subscription](#cancel-subscription)
 
 
@@ -19,6 +20,7 @@ This endpoint requires [token param authentication](https://github.com/Bark-us/p
 * `pk` - the primary key of the user in your data store
 * `email` - email address of the user (be sure to URL encode special
     characters)
+* `plan` - the subscription plan for the account customer (`bark` or `bark_junior`)
 
 Note: The `pk` is important to determine if the parent's account has already
 been created and whether they have an existing parent account on Bark prior to
@@ -29,7 +31,8 @@ The request body should be JSON-serialized with the following format:
 ```json
 {
   "pk":    "MS2365",
-  "email": "newuser@partner.com"
+  "email": "newuser@partner.com",
+  "plan":  "bark"
 }
 ```
 
@@ -51,7 +54,7 @@ If there is an error, an error with the following format will be returned:
 {
   "success":    false,
   "error":      "Please provide a valid token",
-  "error_type": "invalid_token",
+  "error_type": "invalid_token"
 }
 ```
 
@@ -60,8 +63,8 @@ If there is an error, an error with the following format will be returned:
 ```json
 {
   "success":    false,
-  "error":      "Partner pk has already been invited",
-  "error_type": "invalid_params",
+  "error":      "Partner PK has already been added",
+  "error_type": "invalid_params"
 }
 ```
 
@@ -69,14 +72,77 @@ If there is an error, an error with the following format will be returned:
 {
   "success":    false,
   "error":      "Email is blank",
-  "error_type": "invalid_params",
+  "error_type": "invalid_params"
+}
+```
+
+Update Subscription
+----------------------
+
+* `PUT /partners/subscriptions` will update the specified account in Bark
+
+This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
+
+**Required parameters**:
+
+* `pk` - the primary key of the user in your data store
+* `plan` - the subscription plan for the account customer (`bark` or `bark_junior`)
+
+The request body should be JSON-serialized with the following format:
+
+```json
+{
+  "pk":   "MS2365",
+  "plan": "bark_junior"
+},
+```
+
+If successfully created, the following JSON-serialized response will be
+returned with a status of `200 OK`:
+
+
+```json
+{
+  "success": true
+}
+```
+
+If there is an error, an error with the following format will be returned:
+
+`401 Unauthorized`
+
+```json
+{
+  "success":    false,
+  "error":      "Please provide a valid token",
+  "error_type": "invalid_token"
+}
+```
+
+`400 Bad Request`
+
+```json
+{
+  "success":    false,
+  "error":      "Please provide a valid pk",
+  "error_type": "invalid_params"
+}
+```
+
+`404 Not Found`
+
+```json
+{
+  "success":    false,
+  "error":      "Please provide a valid pk",
+  "error_type": "invalid_params"
 }
 ```
 
 Cancel Subscription
 ----------------------
 
-* `DELETE /partners/subscriptions` will delete the specified children in Bark
+* `DELETE /partners/subscriptions` will delete the account Bark
 
 This endpoint requires [token param authentication](https://github.com/Bark-us/partner-integration-docs#token-param-authentication).
 
