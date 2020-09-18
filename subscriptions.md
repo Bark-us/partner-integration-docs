@@ -142,7 +142,7 @@ If there is an error, an error with the following format will be returned:
 Cancel Subscription
 ----------------------
 
-* `DELETE /partners/subscriptions[pk]` will delete the account Bark
+* `DELETE /partners/subscriptions/[pk]` will delete the account Bark
 
 Note: The `pk` will be the one used to create the account.
 
