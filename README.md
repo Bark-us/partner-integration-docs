@@ -52,6 +52,4 @@ API endpoints
 Support
 -------
 
-If you have a specific feature request or if you found a bug, [please open a GitHub issue](https://github.com/Bark-us/partner-integration-docs/issues). We encourage forking these docs for local reference, and will happily accept pull request with agreed improvements.
-
-Alternatively, you can reach us via email at <help@bark.us>.
+If you have a specific feature request or if you found a bug, you can reach us via email at <help@bark.us>.
